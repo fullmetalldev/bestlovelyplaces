@@ -6,6 +6,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+body{
+  background: #030303;
+}
 * a{
   color: #ffffff;
   font-weight: bold;

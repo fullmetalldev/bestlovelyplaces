@@ -6,11 +6,14 @@ const BenefitCard = ({title, info, image}) => {
 
 
     return (
-        <div onMouseLeave={(e)=>
-        e.currentTarget.classList.remove('animate__pulse')
-        } onMouseOver={(e) => {
-            e.currentTarget.classList.add('animate__pulse')
-        }} className="benefitCard animate__animated animate__slideInLeft">
+        <div
+            onMouseLeave={(e) =>
+                e.currentTarget.classList.add('animate__headShake')
+            } onMouseOver={(e) => {
+            e.currentTarget.classList.remove('animate__headShake')
+        }}
+
+            className="benefitCard animate__animated">
             <div className="benefitCard__img">
                 <img src={image} alt=""/>
             </div>

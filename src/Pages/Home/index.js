@@ -17,12 +17,25 @@ const Index = () => {
     ]
 
     return (
-        <div className="home">
+        <div className="home animate__animated animate__bounceInDown">
             <img className="first" src={first} alt=""/>
             <img className="second" src={second} alt=""/>
-            <div className="home__title animate__animated animate__zoomIn">
-                <span><span className="light">Discover</span> the</span>
-                <span>Best Lovely Places</span>
+            <div className="home__title animate__animated">
+                <span
+                className="animate__animated"
+                onMouseLeave={(e) =>
+                    e.currentTarget.classList.add('animate__headShake')
+                } onMouseOver={(e) => {
+                    e.currentTarget.classList.remove('animate__headShake')
+                }}
+                ><span className="light">Discover</span> the</span>
+                <span className="animate__animated"
+                      onMouseLeave={(e) =>
+                          e.currentTarget.classList.add('animate__headShake')
+                      } onMouseOver={(e) => {
+                    e.currentTarget.classList.remove('animate__headShake')
+                }}
+                >Best Lovely Places</span>
             </div>
             <div className="home__benefits">
                 {
@@ -30,39 +43,88 @@ const Index = () => {
                         <BenefitCard info={item.info} title={item.title} image={item.image}/>
                     ))
                 }
-                <div className="home__subtitle animate__animated animate__slideInRight">
-                    <h3 className="home__subtitle_text">
+                <div className="home__subtitle animate__animated">
+                    <h3
+                        onMouseLeave={(e) =>
+                            e.currentTarget.classList.add('animate__headShake')
+                        } onMouseOver={(e) => {
+                        e.currentTarget.classList.remove('animate__headShake')
+                    }}
+                        className="home__subtitle_text animate__animated">
                         Plan and book your perfect trip with expert advice , travel, tips,
                         destination information and inspiration from us.
                     </h3>
                 </div>
             </div>
-            <div className="home__tips">
+            <div className="home__tips animate__animated animate__backInLeft">
                 <div className="colors">
                     <div className="card blue">
-                        <h2>Top values
+                        <h2 className="animate__animated"
+                            onMouseLeave={(e) =>
+                                e.currentTarget.classList.add('animate__headShake')
+                            } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        >Top values
                         <br/>
                             for you
                         </h2>
                         <img src={line} alt=""/>
                     </div>
-                    <div className="card orange">
-                        <h2>Healthy daily life</h2>
-                        <span>We make quality-driven, ethical <br/>
+                    <div className="card orange a">
+                        <h2 className="animate__animated"
+                            onMouseLeave={(e) =>
+                                e.currentTarget.classList.add('animate__headShake')
+                            } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        >Healthy daily life</h2>
+                        <span
+                        className="animate__animated"
+                        onMouseLeave={(e) =>
+                            e.currentTarget.classList.add('animate__headShake')
+                        } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        >We make quality-driven, ethical <br/>
                         and mindful per products
                         </span>
                         <img src={line} alt=""/>
                     </div>
                     <div className="card grey">
-                        <h2> Place to discover</h2>
-                        <span>We make quality-driven, ethical <br/>
+                        <h2 className="animate__animated"
+                            onMouseLeave={(e) =>
+                                e.currentTarget.classList.add('animate__headShake')
+                            } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        > Place to discover</h2>
+                        <span className="animate__animated"
+                              onMouseLeave={(e) =>
+                                  e.currentTarget.classList.add('animate__headShake')
+                              } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        >We make quality-driven, ethical <br/>
                         and mindful per products
                         </span>
                         <img src={line} alt=""/>
                     </div>
                     <div className="card green">
-                        <h2> Get motivated</h2>
-                        <span>We make quality-driven, ethical <br/>
+                        <h2 className="animate__animated"
+                            onMouseLeave={(e) =>
+                                e.currentTarget.classList.add('animate__headShake')
+                            } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        > Get motivated</h2>
+                        <span className="animate__animated"
+                              onMouseLeave={(e) =>
+                                  e.currentTarget.classList.add('animate__headShake')
+                              } onMouseOver={(e) => {
+                            e.currentTarget.classList.remove('animate__headShake')
+                        }}
+                        >We make quality-driven, ethical <br/>
                         and mindful per products
                         </span>
                         <img src={line} alt=""/>
