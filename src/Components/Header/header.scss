@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px;
+  justify-content: space-between;
+  background: #030303;
+  &__navbar{
+    a::before{
+      transition: 0.3s;
+      content: '';
+      background: #030303;
+      position: absolute;
+      height: 2px;
+    }
+    .active{
+      position: relative;
+      transition: 0.3s;
+    }
+    .active::before{
+      width: 40%;
+      bottom: -30%;
+      transition: 0.3s;
+      background: #fe7926;
+      height: 2px;
+    }
+  }
+
+  &__burger {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__burger {
+    margin-right: 25px;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  &__navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  &__profile{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    &_thunder{
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      background: #030303;
+      padding: 4px 10px;
+      .border{
+        padding: 2px;
+        border-radius: 50%;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+        border: 1px solid #ffffff;
+        img{
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+    &_icons{
+      background: #fe7926;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &_user{
+      align-items: center;
+      display: flex;
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+    .arrow{
+      margin-left: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__notifications {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    column-gap: 60px;
+  }
+}
