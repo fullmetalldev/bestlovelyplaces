@@ -6,6 +6,9 @@ import House from '../svg/House_01.svg';
 import line from '../svg/line.svg';
 import first from '../svg/HomeFirst.svg';
 import second from '../svg/HomeSecond.svg';
+import green from '../svg/greeeIcon.svg';
+import circleBlue from '../svg/circleBlue.svg';
+import circleWhite from '../svg/circleWhite.svg';
 import BenefitCard from "../../Components/Benefits/BenefitCard";
 
 const Index = () => {
@@ -72,6 +75,7 @@ const Index = () => {
                         <img src={line} alt=""/>
                     </div>
                     <div className="card orange a">
+                        <img src={circleWhite} className="icon" alt=""/>
                         <h2 className="animate__animated"
                             onMouseLeave={(e) =>
                                 e.currentTarget.classList.add('animate__headShake')
@@ -92,6 +96,7 @@ const Index = () => {
                         <img src={line} alt=""/>
                     </div>
                     <div className="card grey">
+                        <img className="icon" src={circleBlue} alt=""/>
                         <h2 className="animate__animated"
                             onMouseLeave={(e) =>
                                 e.currentTarget.classList.add('animate__headShake')
@@ -111,6 +116,7 @@ const Index = () => {
                         <img src={line} alt=""/>
                     </div>
                     <div className="card green">
+                        <img className="icon" src={green} alt=""/>
                         <h2 className="animate__animated"
                             onMouseLeave={(e) =>
                                 e.currentTarget.classList.add('animate__headShake')
